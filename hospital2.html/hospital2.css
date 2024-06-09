@@ -389,108 +389,79 @@ margin: 0;
     margin: 0 10px;
 }
 
-.news-wrap {
-    position: relative;
-    width:4;
-    
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-
-
-}
-.news-wrap .news-grid{
-    margin-inline: 20px;
-    text-align: center;
-    flex-wrap: wrap;
+.card{
+display: flex;
+justify-content: center;
 }
 
-.news-grid{
-position: relative;
-width:300px;
-height: 430px;
-border-radius: 10px;
-box-shadow:  0 0 12px #ccc;
+.silde-card{
+    position: relative; 
+    width: 400px;
+    height: 425px;
+    margin: 20px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0  12px#ccc;
 }
 
-.news-grid-image img{
+.silde-card img{
 width: 100%;
-height: 200px;
-object-fit: cover;
-transition: .5s ;
-
+height: 100%;
+transition: 0 .5s ease;
 
 }
 
-.news-grid-box{
-display: block;
-position: absolute;
-text-align: center;
-background:rgb(0,0,0,0.3) ;
-left: -107px;
-top:1%;
-padding: 10px;
-transition:.5s;
+.work-text {
 
-}
-
-.news-grid-box h1{
-
-    color: #fff;
-    font-size: 15px;
-    font-weight: 300;
-    letter-spacing: 2px;
-    padding-bottom: 5px;
-    margin-bottom:5px ;
-}
-.news-grid-box .media{
-    color: #fff;
-    font-size: 15px;
-    font-weight: 300;
-    letter-spacing: 2px;
-    padding-bottom: 5px;
-    margin-bottom:5px 
-    
-}
-
-
-.news-grid:hover .news-grid-box{
+    position: absolute;
+    bottom: 0;
     left: 0;
-    
-    transition: .5s;
+    right: 0;
+    background-color:  rgba(0,0,0,0.6);
+    color: #fff;
+    padding: 20px;
+    transform: translateY(100%) ;
+    transition: 0.5s ease;
 }
 
-.news-grid:hover .news-grid-image img{
-    filter: grayscale(1);
-    transform: scale(1.1);
-    transition :.5s;
-    
+ .card.silde-card :hover .work-text{
+    transform: translateY(0%);
+
 }
 
+.silde-card :hover img{
+    transform: scale(1.2);
 
-.news-grid-text{
-    margin: 20px;
-}
-.news-grid-text h2{
-    font-size: 18px;
 }
 
+.card .silde-card{
+    width: 300px;
+    margin-inline: 35px;
+    text-align: center;
 
-.news-grid-text p{
-    font-size: 15px;
-    margin: 20px;
-    color: lightslategray;
 }
-.news-grid-text .btn{
-    font-size: 15px;
-     margin:15px ;
-     color: #000;
-     transition: .5s;
-}
-.news-grid-text .icon{
+
+.silde-card .btn{
+    background-color: #fff;
+    color:#000;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
     font-size: 10px;
+    cursor: pointer;
+    transition: 0.5s  ease;
+
+
+
 }
+
+
+
+
+
+
+
+
 
 
 
@@ -558,74 +529,7 @@ transition:.5s;
     }
     
     
-}
- 
-
-.owl-controls .owl-buttons{
-    position: relative;
-}
-
-.owl-controls .owl-prev{
-
-    position: absolute;
-    left: -40px;
-    bottom: 230px;
-    padding: 8px 17px;
-    background: #26ccca;
-    border-radius: 50px;
-    transform:  .5s;
-}
-
-
-.owl-controls .owl-next{
-
-    position: absolute;
-    right: -40px;
-    bottom: 230px;
-    padding: 8px 17px;
-    background: #26ccca;
-    border-radius: 50px;
-    transform:  .5s;
-}
-
-
-.owl-controls .owl-prev:after,  .owl-controls .owl-next:after{
-     content: '\f104';
-     font-family: fontAwesome ;
-     color: #fff;
-     font-size: 16px;
-
-}
-
-.owl-controls .owl-next:after{
-    content:\f105 ;
-}
-
-.owl-controls .owl-prev:hover,  .owl-controls .owl-next:hover{
-    background: #000;
-
-
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-   
+} 
 
 
 
